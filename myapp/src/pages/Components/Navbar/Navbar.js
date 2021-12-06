@@ -25,6 +25,7 @@ const Navbar = () => {
 
   return (
     <>
+    <div className="navbar">
     <Drawer
         sx={{
           width: drawerWidth,
@@ -61,6 +62,7 @@ const Navbar = () => {
           ))}
         </List>
       </Drawer>
+      </div>
     </>
   );
 }

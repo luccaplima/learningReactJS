@@ -25,7 +25,7 @@ export const mainNavbarItems = [
     {
         id: 3,
         icon: <MenuBookIcon />,
-        label: 'Lesson 2',
+        label: 'Props',
         route: 'lesson2',
     },
     {

@@ -20,7 +20,13 @@ const App = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<About />} />
-          <Route path='/lesson1' element={<Lesson1 />} />
+          <Route path='/lesson1' element={<Lesson1 
+                                          categories={[1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]}
+                                          data={[30, 40, 35, 50, 49, 60, 70, 91, 125]}
+                                          width={500}
+                                          height={320}
+                                                  
+          />} />
           <Route path='/lesson2' element={<Lesson2 />} />
           <Route path='/lesson3' element={<Lesson3 />} />
           <Route path='/contact' element={<Contact />} />
