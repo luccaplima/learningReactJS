@@ -2,14 +2,32 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Navbar from './pages/Components/Navbar/Navbar';
 import HomePage from './pages/homePage/Homepage';
+import About from './pages/About/About';
+import Lesson1 from './pages/Lesson1/Lesson1';
+import Lesson2 from './pages/Lesson2/Lesson2';
+import Lesson3 from './pages/Lesson3/Lesson3';
+import Contact from './pages/ContactPage/Contact';
+import Page404 from './pages/notFound/404';
+import Navbar from './pages/Components/Navbar/Navbar';
+import Card from './pages/Components/layout/Card';
 
 const App = () => {
   return (
-   <div className="App">
-     <Navbar />
-   </div>
+    <div className="App">
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/lesson1' element={<Lesson1 />} />
+          <Route path='/lesson2' element={<Lesson2 />} />
+          <Route path='/lesson3' element={<Lesson3 />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<Page404 />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

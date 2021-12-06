@@ -1,18 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Chart from 'react-apexcharts';
+import './Lesson1.css';
 
-import Navbar from '../Components/Navbar/Navbar';
 
-const Lesson1 = () => {
+export default class Lesson1 extends Component {
+    constructor(props) {
+        super(props);
     
-    return (
-        <>
-        <div className="container">
-            <h1 className="text-center" style={{ paddingTop: "30%" }}>
-                Lesson 1
-            </h1>
-        </div>
-        </>
-    )
-}
+        this.state = {
+          options: {
+            chart: {
+              id: 'apexchart-example'
+            },
+            xaxis: {
+              categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+            }
+          },
+          series: [{
+            name: ['Value'],
+            data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
+          }]
+        }
+      }
 
-export default Lesson1;
+      render() {
+        return (
+            <>
+            <div className="bg-grafico">
+                <div className="apexchart-example">
+                    <Chart options={this.state.options} series={this.state.series} type="bar" width={500} height={320} />
+                </div>
+            </div>
+            </>
+        )
+      }
+}

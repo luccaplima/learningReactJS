@@ -1,7 +1,4 @@
-.teste {
-  border: 3px solid black;
-  font-size: 50px;
-  text-align: center;
-  margin-left: 500px;
-  margin-right: 500px;
+.App {
+  display: flex;
+  flex-wrap: wrap;
 }

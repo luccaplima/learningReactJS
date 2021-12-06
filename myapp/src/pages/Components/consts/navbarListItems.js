@@ -19,7 +19,7 @@ export const mainNavbarItems = [
     {
         id: 2,
         icon: <MenuBookIcon />,
-        label: 'Lesson 1',
+        label: 'Column Bar',
         route: 'lesson1',
     },
     {
