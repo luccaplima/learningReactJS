@@ -15,8 +15,9 @@ const HomePage = () => {
                 <h2 id="card-2">Conceitos de props e reutilização de componentes</h2>
                 <p>Utilizando-se do componente criado no Card #01</p>
             </Card>
-            <Card href="/lesson3" titulo="Lesson 3">
-                Card 3
+            <Card href="/lesson3" titulo="#03 - DataGrid + API GET">
+            <h2 id="card-2">DataGrid + API GET</h2>
+                <p>DataGrid com preenchimento via requisição GET api</p>
             </Card>
         </>
 

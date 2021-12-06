@@ -31,7 +31,7 @@ export const mainNavbarItems = [
     {
         id: 4,
         icon: <MenuBookIcon />,
-        label: 'Lesson 3',
+        label: 'DataGrid MIT',
         route: 'lesson3',
     },
     {
