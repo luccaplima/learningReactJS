@@ -6,7 +6,8 @@ import './Homepage.css'
 const HomePage = () => {
     
     return (
-        <>
+   
+        <div className="content">
             <Card href="/lesson1" titulo="#01 - Column Bar React-ApexCharts">
                 <h2>React-ApexCharts</h2>
                 <p>Column Bar Example</p>
@@ -16,10 +17,20 @@ const HomePage = () => {
                 <p>Utilizando-se do componente criado no Card #01</p>
             </Card>
             <Card href="/lesson3" titulo="#03 - DataGrid + API GET">
-            <h2 id="card-2">DataGrid + API GET</h2>
+                <h2 id="card-2">DataGrid + API GET</h2>
                 <p>DataGrid com preenchimento via requisição GET api</p>
             </Card>
-        </>
+            <Card href="/lesson4" titulo="#04 - Pie Chart">
+                <h2>Pie Chart</h2>
+                <p>Pie Chart Data View ApexCharts</p>
+            </Card>
+            <Card href="/lesson5" titulo="#05 - Components MUI">
+                <h2>Components MUI</h2>
+                <p>Basic Modal</p>
+                <p>Card</p>
+            </Card>
+        </div>
+
 
     )
 }

@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.center {
+    max-width: 960px;
+    margin:0 auto;
+    padding:0 2%;
+    display: flex;
+}
+
+.main {
+    padding:40px 0;
+    margin-left: 100px;
+    background-color: aliceblue;
+    min-height: 400px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.menu h3{
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+
+}

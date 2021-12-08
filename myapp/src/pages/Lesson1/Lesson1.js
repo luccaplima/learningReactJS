@@ -27,10 +27,10 @@ export default class Lesson1 extends Component {
         return (
             <>
             <div className="bg-grafico">
+            </div>
                 <div className="apexchart-example">
                     <Chart options={this.state.options} series={this.state.series} type="bar" width={this.props.width} height={this.props.height} />
                 </div>
-            </div>
             </>
         )
       }

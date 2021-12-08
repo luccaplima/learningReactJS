@@ -36,6 +36,18 @@ export const mainNavbarItems = [
     },
     {
         id: 5,
+        icon: <MenuBookIcon />,
+        label: 'Pie Chart',
+        route: 'lesson4',
+    },
+    {
+        id: 6,
+        icon: <MenuBookIcon />,
+        label: 'Components MUI',
+        route: 'lesson5',
+    },
+    {
+        id: 7,
         icon: <AlternateEmailIcon />,
         label: 'Contact Me',
         route: 'contact',
